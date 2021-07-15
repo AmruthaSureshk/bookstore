@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block body %}
+<form method="POST" style="text-align:center;margin-top:280px">
+  {% csrf_token %}
+  Are you sure you want to permanently delete this book?<br>
+  <input type="submit">
+</form>
+{% endblock %}
